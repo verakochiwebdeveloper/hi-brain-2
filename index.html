@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="hi brains">
+    <meta name="keywords" content="Доска объявлений, hi brains">
+    <title> Объявления</title>
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <!--Шрифты-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--normalize css-->
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <!--Глобальные стили-->
+    <link rel="stylesheet" href="css/global.css"/>
+    <!--Стили страницы-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Адаптив-->
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper flex --align-center --just-space">
+          <a href="#" class="logo"><img src="svg/logo.svg" alt="hi brain" class="logo__img"></a>
+        <button class="search__open --btn"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21 21L16.65 16.65" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <a href="#" class="header__order">Разместить объявление</a>
+        <a href="#" class="header__sigin">
+          <svg class="user-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>Войти</a>
+        </div>
+      </div>
+    </header>
+    <main class="flex">
+      <aside class="aside">
+        <div class="container-asaide">
+          <div class="account flex --align-center --just-space">
+            <div class="account__image">
+              А
+            </div>
+            <div class="account__info">
+              <p class="account__info-name">Алексей У.</p>
+              <p class="account__info-rank">Личный кабинет</p>
+            </div>
+          </div>
+          <div class="dashboard">
+            <ul class="dashboard__list --just-center">
+              <li class="dashboard__list-item">
+                <!--спорный вопрос насчет кнопки-->
+                <a class="dashboard__list-link "> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path d="M1.66669 2.5H6.66669C7.55074 2.5 8.39859 2.85119 9.02371 3.47631C9.64883 4.10143 10 4.94928 10 5.83333V17.5C10 16.837 9.73663 16.2011 9.26779 15.7322C8.79895 15.2634 8.16306 15 7.50002 15H1.66669V2.5Z" stroke="#1E3DAF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.3333 2.5H13.3333C12.4493 2.5 11.6014 2.85119 10.9763 3.47631C10.3512 4.10143 10 4.94928 10 5.83333V17.5C10 16.837 10.2634 16.2011 10.7322 15.7322C11.2011 15.2634 11.837 15 12.5 15H18.3333V2.5Z" stroke="#1E3DAF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>Объявления</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="exit">Выход</a>
+        </div>
+      </aside>
+      <section class="advertisement">
+        <div class="container-mini">
+          <div class="advertisement__wrapper flex --align-center --just-space">
+            <div class="advertisement__info">
+              <h1 class="advertisment__info-title ">
+                Объявления
+              </h1>
+              <p class="advertisment__info-text">Всего: <span class="advertisment__info-count"> 45</span></p>
+            </div>
+            <button class="advertisment__add">
+              Добавить <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M10 4.16675V15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.16669 10H15.8334" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          <div class="advertisement__search">
+            <form action="#" class="advertisment__search-form">
+              <input class="advertisment__search-input" type="search" name="" id="">
+              <button class="advertisment__search-button --btn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 20.9997L16.6501 16.6497" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+              <button class="advertisment__search-filter">Фильтровать <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M7.20001 12L16.8 12" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3.60001 6L20.4 6" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.8 18L13.2 18" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            </form>
+          </div>
+          <div class="advertisement__list">
+            <!--не понятно кнопки или ссылки-->
+            <ul class="advertisemet__list-navigation flex --just-space">
+              <li class="list-navigatio__name">Название объявления</li>
+              <li class="list-navigatio__category">Категория</li>
+              <li class="list-navigatio__data">Дата публикации</li>
+              <li class="list-navigatio__list-pablished">Публикация</li>
+            </ul>
+            <div class="advertisment__list-wrapper">
+              <!--здесь тоже не понятно или же ссылки или просто текст -->
+              <div class="advertisment__item flex --align-center --just-space">
+                <h4 class="advertisment__item-title">Чепчик</h4>
+                <p class="advertisment__item-category">Одежда</p>
+                <time class="advertisment__item-data" datetime="2020-09-12">12 сентября 2020</time>
+                <p class="advertisment__item-pablished">да</p>
+                <button class="advertisment__item-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <path d="M12 13C12.5523 13 13 12.5523 13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12C11 12.5523 11.4477 13 12 13Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 6C12.5523 6 13 5.55228 13 5C13 4.44772 12.5523 4 12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 20C12.5523 20 13 19.5523 13 19C13 18.4477 12.5523 18 12 18C11.4477 18 11 18.4477 11 19C11 19.5523 11.4477 20 12 20Z" stroke="#2A2F37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top flex --just-space">
+          <div class="footer__logo flex --align-center">
+            <a href="#" class="logo__footer"><img src="svg/logo-white.svg" alt="hi brain" class="logo__img"></a>
+            <div class="footer__logo-text --roboto-r-12">Платформа подготовки и трудоустройства IT-специалистов</div>
+          </div>
+          <ul class="footer__social flex">
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-facebook">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                  <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="white"/>
+                  <path d="M25.0278 20.783H21.459V33.8573H16.052V20.783H13.4805V16.1882H16.052V13.2148C16.052 11.0886 17.0621 7.75903 21.5071 7.75903L25.5123 7.77579V12.2358H22.6063C22.1296 12.2358 21.4594 12.474 21.4594 13.4883V16.1925H25.5001L25.0278 20.783Z" fill="#2A2F37"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-instagram">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                  <path d="M25.9608 10.6421H14.0389C12.1361 10.6421 10.5879 12.1903 10.5879 14.0931V26.015C10.5879 27.9179 12.1361 29.4665 14.0389 29.4665H25.9608C27.8637 29.4665 29.4123 27.9183 29.4123 26.015V14.0931C29.4123 12.1903 27.8641 10.6421 25.9608 10.6421ZM19.9999 26.2512C16.5831 26.2512 13.8032 23.4713 13.8032 20.0541C13.8032 16.6373 16.5831 13.8574 19.9999 13.8574C23.4171 13.8574 26.197 16.6373 26.197 20.0541C26.197 23.4708 23.4166 26.2512 19.9999 26.2512ZM26.3962 15.1386C25.5873 15.1386 24.9296 14.4809 24.9296 13.6725C24.9296 12.8641 25.5873 12.2063 26.3962 12.2063C27.2046 12.2063 27.8623 12.8641 27.8623 13.6725C27.8623 14.4809 27.2046 15.1386 26.3962 15.1386Z" fill="white"/>
+                  <path d="M20.0004 16.4758C18.028 16.4758 16.4219 18.081 16.4219 20.0534C16.4219 22.0267 18.028 23.6324 20.0004 23.6324C21.9737 23.6324 23.5785 22.0267 23.5785 20.0534C23.5785 18.0815 21.9732 16.4758 20.0004 16.4758Z" fill="white"/>
+                  <path d="M20 0C8.95475 0 0 8.95475 0 20C0 31.0453 8.95475 40 20 40C31.0453 40 40 31.0453 40 20C40 8.95475 31.0453 0 20 0ZM32.0306 26.0148C32.0306 29.3621 29.3081 32.0845 25.9609 32.0845H14.0391C10.6923 32.0845 7.96943 29.3621 7.96943 26.0148V14.093C7.96943 10.7462 10.6923 8.02335 14.0391 8.02335H25.9609C29.3081 8.02335 32.0306 10.7462 32.0306 14.093V26.0148Z" fill="white"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#" class="footer__social-vk">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.4">
+                  <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2443 28.7719H20.814C20.814 28.7719 21.2882 28.7198 21.5303 28.4588C21.7531 28.2193 21.746 27.7693 21.746 27.7693C21.746 27.7693 21.7153 25.663 22.6929 25.3529C23.6565 25.0473 24.894 27.3886 26.2056 28.2888C27.1975 28.9701 27.9512 28.8207 27.9512 28.8207L31.4582 28.7719C31.4582 28.7719 33.2929 28.6589 32.423 27.2164C32.3517 27.0984 31.9164 26.1493 29.8154 24.1992C27.6164 22.1581 27.9109 22.4882 30.5598 18.9576C32.1731 16.8075 32.818 15.4947 32.6166 14.9325C32.4244 14.397 31.2379 14.5386 31.2379 14.5386L27.2891 14.5632C27.2891 14.5632 26.9964 14.5232 26.7793 14.653C26.5672 14.7803 26.4306 15.0769 26.4306 15.0769C26.4306 15.0769 25.8056 16.7408 24.9721 18.1558C23.2137 21.1417 22.5107 21.2992 22.2233 21.1138C21.5549 20.6817 21.7217 19.378 21.7217 18.4517C21.7217 15.5582 22.1606 14.3517 20.8671 14.0394C20.4379 13.9357 20.122 13.8672 19.0243 13.8562C17.6153 13.8416 16.4228 13.8605 15.7475 14.1913C15.2983 14.4113 14.9518 14.9015 15.1628 14.9297C15.4238 14.9646 16.0149 15.089 16.3283 15.5158C16.7329 16.0662 16.7187 17.3027 16.7187 17.3027C16.7187 17.3027 16.9511 20.7088 16.1757 21.132C15.6434 21.4222 14.9133 20.8297 13.3457 18.1209C12.5424 16.7333 11.936 15.1996 11.936 15.1996C11.936 15.1996 11.819 14.9129 11.6105 14.7596C11.3573 14.5739 11.0037 14.5147 11.0037 14.5147L7.25132 14.5393C7.25132 14.5393 6.68802 14.555 6.48124 14.7999C6.29728 15.0177 6.46662 15.4684 6.46662 15.4684C6.46662 15.4684 9.40434 22.3413 12.7307 25.8049C15.7807 28.9804 19.2443 28.7719 19.2443 28.7719Z" fill="#2A2F37"/>
+                  </g>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="menu">
+          <ul class="menu__list flex --just-space">
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link --roboto-r-16"> Курсы</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link --roboto-r-16"> Трудоустройство</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link --roboto-r-16">Сотрудничество</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link --roboto-r-16">O Hibrain</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link --roboto-r-16">Новости</a>
+            </li>
+            <li class="menu__list-item">
+              <a href="#" class="menu__list-link --roboto-r-16">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__info flex --just-space">
+          <p class="footer__info-copyraite --roboto-r-12">
+            © ООО «Лад Ай Ти», 2020
+          </p>
+          <a href="#" class="footer__info-polytical --roboto-r-12">
+            Политика конфиденциальности
+          </a>
+          <a href="mailto:support@hibrain.pro" class="footer__info-mail --roboto-r-12">support@hibrain.pro</a>
+          <a href="tel:+88000000000" class="footer__info-tel --roboto-r-12">8 800 000 00 00</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
